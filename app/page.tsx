@@ -165,6 +165,7 @@ export default function EnhancedKruskalSimulator() {
   }
 
   return (
+    <main className='min-h-screen md:py-20 py-10'>
     <Card className="w-full max-w-4xl mx-auto">
       <CardHeader>
         <CardTitle>Enhanced Kruskal's Algorithm Simulator</CardTitle>
@@ -180,8 +181,8 @@ export default function EnhancedKruskalSimulator() {
           </TabsList>
           <TabsContent value="simulator">
             <div className="flex flex-col items-center space-y-4">
-              <svg width="300" height="300" className="border border-gray-300 rounded">
-                {edges.map((edge, index) => {
+            <svg width="50%" height="50%" viewBox="0 0 250 300" className="border border-gray-300 rounded">
+            {edges.map((edge, index) => {
                   const start = nodes[edge.from]
                   const end = nodes[edge.to]
                   const isMst = mst.some(e => e.from === edge.from && e.to === edge.to)
@@ -192,14 +193,14 @@ export default function EnhancedKruskalSimulator() {
                         y1={start.y}
                         x2={end.x}
                         y2={end.y}
-                        stroke={isMst ? "green" : "gray"}
+                        stroke={isMst ? "red" : "gray"}
                         strokeWidth={isMst ? 3 : 1}
                       />
                       <text
                         x={(start.x + end.x) / 2}
                         y={(start.y + end.y) / 2}
                         textAnchor="middle"
-                        fill={isMst ? "green" : "black"}
+                        fill={isMst ? "white" : "white"}
                         fontSize="12"
                       >
                         {edge.weight}
@@ -291,5 +292,6 @@ export default function EnhancedKruskalSimulator() {
         </Tabs>
       </CardContent>
     </Card>
+    </main>
   )
 }
