@@ -165,7 +165,7 @@ export default function EnhancedKruskalSimulator() {
   }
 
   return (
-    <main className='min-h-screen md:py-20 py-10'>
+    <main className='min-h-screen md:py-10 py-10'>
     <Card className="w-full max-w-4xl mx-auto">
       <CardHeader>
         <CardTitle>Enhanced Kruskal's Algorithm Simulator</CardTitle>
@@ -292,6 +292,9 @@ export default function EnhancedKruskalSimulator() {
         </Tabs>
       </CardContent>
     </Card>
+    <footer className="w-full text-center py-4  text-white">
+        <p>Made for fun by <a href="https://github.com/FrenzyVJN" target="_blank" >FrenzyVJN</a></p>
+    </footer>
     </main>
   )
 }
