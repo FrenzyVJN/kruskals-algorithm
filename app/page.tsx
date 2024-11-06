@@ -30,7 +30,6 @@ const initialNodes: Node[] = [
 
 const initialEdges: Edge[] = [
   { from: 0, to: 1, weight: 2 },
-  { from: 0, to: 2, weight: 3 },
   { from: 1, to: 2, weight: 1 },
   { from: 1, to: 4, weight: 4 },
   { from: 2, to: 3, weight: 5 },
