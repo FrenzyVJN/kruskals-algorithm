@@ -33,8 +33,6 @@ const initialEdges: Edge[] = [
   { from: 1, to: 2, weight: 1 },
   { from: 1, to: 4, weight: 4 },
   { from: 2, to: 3, weight: 5 },
-  { from: 2, to: 4, weight: 6 },
-  { from: 3, to: 4, weight: 7 },
 ]
 
 function find(parent: number[], i: number): number {
